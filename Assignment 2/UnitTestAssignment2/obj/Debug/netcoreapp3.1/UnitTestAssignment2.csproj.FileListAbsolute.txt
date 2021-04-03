@@ -11,3 +11,16 @@ C:\Users\rahula.singh\Desktop\angular\testing\Gateway-Assignments-master\UnitTes
 C:\Users\rahula.singh\Desktop\angular\testing\Gateway-Assignments-master\UnitTestAssignment2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.dll
 C:\Users\rahula.singh\Desktop\angular\testing\Gateway-Assignments-master\UnitTestAssignment2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.pdb
 C:\Users\rahula.singh\Desktop\angular\testing\Gateway-Assignments-master\UnitTestAssignment2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.genruntimeconfig.cache
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\bin\Debug\netcoreapp3.1\UnitTestAssignment2.exe
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\bin\Debug\netcoreapp3.1\UnitTestAssignment2.deps.json
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\bin\Debug\netcoreapp3.1\UnitTestAssignment2.runtimeconfig.json
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\bin\Debug\netcoreapp3.1\UnitTestAssignment2.runtimeconfig.dev.json
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\bin\Debug\netcoreapp3.1\UnitTestAssignment2.dll
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\bin\Debug\netcoreapp3.1\UnitTestAssignment2.pdb
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.csprojAssemblyReference.cache
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.AssemblyInfoInputs.cache
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.AssemblyInfo.cs
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.csproj.CoreCompileInputs.cache
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.dll
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.pdb
+C:\Users\nishit.jariwala\Documents\TestingAssignment\TestingAssignment\Assignment 2\UnitTestAssignment2\obj\Debug\netcoreapp3.1\UnitTestAssignment2.genruntimeconfig.cache

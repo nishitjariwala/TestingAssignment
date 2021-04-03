@@ -7,106 +7,141 @@ namespace UnitTestAssignment2
 {
     public static class ExtendMethod
     {
-        public static int WordCount(this string a)
-        {
-            int b = 0, myWord = 1;
-            while (b <= a.Length - 1)
-            {
-                if (a[b] == ' ' || a[b] == '\n' || a[b] == '\t')
-                {
-                    myWord++;
-                }
-                b++;
-            }
-            return myWord;
-        }
-        public static string ConvertLower(this string a)
-        {
-            return a.ToLower();
-        }
-        public static string ConvertUpper(this string a)
-        {
-            return a.ToUpper();
-        }
-        public static bool IsLower(this string a)
-        {
-            string Mystring = a;
-            char[] chars;
-            char ch;
-            int length = Mystring.Length;
-            int cnt;
-            int totalcntlower = 0;
 
-            chars = Mystring.ToCharArray(0, length);
-            for (cnt = 0; cnt < length; cnt++)
-            {
-                ch = chars[cnt];
-                if (char.IsLower(ch))
-                {
-                    totalcntlower++;
-                }
-            }
-            if(totalcntlower == length)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        public static bool IsUpper(this string a)
+        //  Question: 9
+        //  Method created for counting words
+        public static int FunctionForCountingWord(this string inputString)
         {
-            string Mystring = a;
-            char[] chars;
-            char ch;
-            int length = Mystring.Length;
-            int cnt;
-            int totalcntupper = 0;
+            if (inputString.Length > 0)
+            {
+                string[] words = inputString.Split(' ');
+                return words.Length;
+            }
+            return 0;
+        }
 
-            chars = Mystring.ToCharArray(0, length);
-            for (cnt = 0; cnt < length; cnt++)
+        //  Question: 1 & 2
+        //  Method for multiple case of string converter
+        public static string FunctionForConvertCase(this string inputString)
+        {
+            if (inputString.Length > 0)
             {
-                ch = chars[cnt];
-                if (char.IsUpper(ch))
+                char[] cArray = inputString.ToCharArray();
+                for (int i = 0; i < inputString.Length; i++)
                 {
-                    totalcntupper++;
+                    cArray[i] = char.IsUpper(cArray[i]) ? char.ToLower(cArray[i]) : char.ToUpper(cArray[i]);
                 }
+                return new string(cArray);
             }
-            if (totalcntupper == length)
+            return inputString;
+        }
+       
+        //  Question: 4
+        //  Method to Check if all the characters from given input string are in lower case or not.
+        public static bool CheckLowerCase(this string inputString)
+        {
+            int count = 0;
+            int len = inputString.Length;
+            if (inputString.Length > 0)
             {
-                return true;
+                char[] charArray = inputString.ToCharArray();
+                for (int i = 0; i < inputString.Length; i++)
+                {
+                    if (char.IsLower(charArray[i]) || char.IsWhiteSpace(charArray[i]))
+                    {
+                        count++;
+                    }
+                }
+                if (count == len)
+                    return true;
             }
-            else
+            return false;
+        }
+
+        //  Question: 6
+        //  Method to Check if all the characters from given input string are in upper case or not.
+        public static bool CheckUpperCase(this string inputString)
+        {
+            int count = 0;
+            int len = inputString.Length;
+            if (inputString.Length > 0)
             {
-                return false;
+                char[] charArray = inputString.ToCharArray();
+                for (int i = 0; i < inputString.Length; i++)
+                {
+                    if (char.IsUpper(charArray[i]) || char.IsWhiteSpace(charArray[i]))
+                    {
+                        count++;
+                    }
+                }
+                if (count == len)
+                    return true;
             }
+            return false;
         }
-        public static string ConvertCapitalize(this string a)
+
+        // Question: 5
+        //  Convert string into Capatalize
+        public static string ConvertCapitalize(this string inputString)
         {
-            return char.ToUpper(a[0]) + a.Substring(1);
-        }
-        public static string ConvertTitleCase(this string a)
-        {
-            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(a);
-        }
-        public static string RemoveLastCharacter(this string a)
-        {
-            return a.Remove(a.Length - 1, 1);
-        }
-        public static bool ValidNumeric(this string a)
-        {
-            int number1 = 0;
-            return int.TryParse(a, out number1);
-        }
-        public static int? StringToNumber(this string a)
-        {
-            if (a.ValidNumeric())
+            if (inputString.Length > 0)
             {
-                return int.Parse(a);
+                char[] charArray = inputString.ToCharArray();
+                charArray[0] = char.ToUpper(charArray[0]);
+                for (int i = 1; i < inputString.Length; i++)
+                {
+                    charArray[i] = char.ToLower(charArray[i]);
+                }
+                return new string(charArray);
             }
-            else
-                return null;
+            return inputString;
+        }
+
+        // Question: 3
+        //  Convert string into Title Case
+        public static string ConvertTitleCase(this string inputString)
+        {
+            if (inputString.Length > 0)
+            {
+                string result = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(inputString.ToLower());
+                return result;
+            }
+            return inputString;
+        }
+
+        //  Question 8
+        //  function to remove the last character from given the string
+        public static string RemoveLastCharacter(this string inputString)
+        {
+            if (inputString.Length > 0)
+            {
+                return inputString.Substring(0, inputString.Length - 1);
+            }
+            return inputString;
+        }
+
+        //  Question 7
+        //  Function to identify whether given input string can be converted to a valid numeric value or not
+        public static bool ValidationOfNumber(this string inputString)
+        {
+            if (inputString.Length > 0)
+            {
+                int number;
+                return int.TryParse(inputString, out number);
+            }
+            return false;
+        }
+
+        //  Question 10
+        //  Cnvert an input string to integer
+        public static int? integerConverter(this string inputString)
+        {
+            int x = 0;
+            if (inputString.Length > 0)
+            {
+                Int32.TryParse(inputString, out x);
+            }
+            return x;
         }
     }
 }
